@@ -1,0 +1,28 @@
+
+
+<form [formGroup]="reactive" (ngSubmit)="save()">
+        <div formArrayName="PresentAddress" *ngFor="let add of reactive.get('PresentAddress').controls;let i = index">
+                <label>Address:</label>
+                <div formGroupName="{{i}}">
+    
+              
+                        <input type="text" formControlName="state" placeholder="State" autocomplete="off" class="form-control"><br>
+                        <input type="text" formControlName="city" placeholder="City" autocomplete="off" class="form-control"><br>
+                        <input type="text" formControlName="village" placeholder="Village" autocomplete="off" class="form-control"><br>
+                        <input type="text" formControlName="pincode" placeholder="Pincode" autocomplete="off" class="form-control"><br>
+               </div>
+               </div>
+               <input type="checkbox" [formControl]="isSameAddressControl"> Same as Present Address
+               <div formArrayName="PremanentAddress" *ngFor="let add of reactive.get('PremanentAddress').controls;let i = index">
+                    <label>Address:</label>
+                    <div formGroupName="{{i}}">
+        
+                  
+                            <input type="text" formControlName="state" placeholder="State" autocomplete="off" class="form-control"><br>
+                            <input type="text" formControlName="city" placeholder="City" autocomplete="off" class="form-control"><br>
+                            <input type="text" formControlName="village" placeholder="Village" autocomplete="off" class="form-control"><br>
+                            <input type="text" formControlName="pincode" placeholder="Pincode" autocomplete="off" class="form-control"><br>
+                   </div>
+                   </div>
+  <button class="btn btn-primary">Submit</button>
+</form>

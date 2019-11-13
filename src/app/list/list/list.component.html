@@ -1,0 +1,103 @@
+<h1 style="text-align: center;">Personal Information</h1>
+
+  
+   
+
+   <table class="table table-bordered">
+       <tr>
+           <th>FirstName</th>
+           <th>LastName</th>
+           <th>FatherName</th>
+       </tr>
+       <tr *ngFor="let i of result1">
+           <td> {{i.firstname}}</td>
+           <td>{{i.lastname}} </td>
+           <td>{{i.fathername}} </td>
+       </tr>
+   </table>
+   <h1 style="text-align: center;">Education Details</h1>
+   <h2>SSC</h2>
+   <table class="table table-bordered">
+       <tr>
+           <th>School Name</th>
+           <th>Marks</th>
+           <th>Year of Passed out</th>
+       </tr>
+       <tr *ngFor="let s of result">
+           <td>{{s.ssc[0].sname}}</td>
+           <td>{{s.ssc[0].smarks}}</td>
+           <td>{{s.ssc[0].syear}}</td>
+       </tr>
+   </table>
+   <h2>Inter</h2>
+   <table class="table table-bordered">
+        <tr>
+            <th>College Name</th>
+            <th>Marks</th>
+            <th>Year of Passed out</th>
+        </tr>
+        <tr *ngFor="let s of result">
+            <td>{{s.inter[0].iname}}</td>
+            <td>{{s.inter[0].imarks}}</td>
+            <td>{{s.inter[0].iyear}}</td>
+        </tr>
+    </table>
+   <h2>Graduate</h2>
+   <table class="table table-bordered">
+       <tr>
+           <th>College Name</th>
+           <th>Marks</th>
+           <th>Year of Passed out</th>
+       </tr>
+       <tr *ngFor="let s of result">
+           <td>{{s.graduate[0].gname}}</td>
+           <td>{{s.graduate[0].gmarks}}</td>
+           <td>{{s.graduate[0].gyear}}</td>
+       </tr>
+   </table>
+   <h2>Post Graduate</h2>
+   <table class="table table-bordered">
+       <tr>
+           <th>School Name</th>
+           <th>Marks</th>
+           <th>Year of Passed out</th>
+       </tr>
+       <tr *ngFor="let s of result">
+           <td>{{s.pgraduate[0].pname}}</td>
+           <td>{{s.pgraduate[0].pmarks}}</td>
+           <td>{{s.pgraduate[0].pyear}}</td>
+       </tr>
+   </table>
+   <h1 style="text-align: center;">Address</h1>
+   <h2>Present Address</h2>
+   <table class="table table-bordered">
+       <tr>
+           <th>State</th>
+           <th>City</th>
+           <th>Village</th>
+           <th>Pincode</th>
+       </tr>
+       <tr *ngFor="let s of result2">
+           <td>{{s.PresentAddress[0].state}}</td>
+           <td>{{s.PresentAddress[0].city}}</td>
+           <td>{{s.PresentAddress[0].village}}</td>
+           <td>{{s.PresentAddress[0].pincode}}</td>
+       </tr>
+   </table>
+   <h2>Premanent Address</h2>
+   <table class="table table-bordered">
+        <tr>
+            <th>State</th>
+            <th>City</th>
+            <th>Village</th>
+            <th>Pincode</th>
+        </tr>
+        <tr *ngFor="let s of result2">
+            <td>{{s.PremanentAddress[0].state}}</td>
+            <td>{{s.PremanentAddress[0].city}}</td>
+            <td>{{s.PremanentAddress[0].village}}</td>
+            <td>{{s.PremanentAddress[0].pincode}}</td>
+        </tr>
+    </table>
+    <button class="btn btn-primary" (click)="go()">Go Back</button>
+

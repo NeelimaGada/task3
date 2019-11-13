@@ -1,0 +1,93 @@
+
+<h1 style="text-align: center;">Education Details</h1>
+
+<div class="container">
+   
+                <form [formGroup]="reactive" >
+                        <div formArrayName="ssc" *ngFor="let add of reactive.get('ssc').controls;let i = index">
+                                <h1 style="text-align: center;">SSC</h1>
+                                <div formGroupName="{{i}}">
+                    
+                              
+                                <div class="form-group">
+                                  <label>School Name</label>
+                                  <input type="text" class="form-control" formControlName="sname">
+                              </div>
+                              <div class="form-group">
+                                <label>Percentage</label>
+                                <input type="text" class="form-control" formControlName="smarks">
+                            </div>
+                            <div class="form-group">
+                                    <label>Year</label>
+                                    <input type="text" class="form-control" formControlName="syear">
+                                </div>
+                               
+                               </div>
+                               </div>
+                            
+                            
+                                    <div formArrayName="inter" *ngFor="let add of reactive.get('inter').controls;let i = index">
+                                            <h1 style="text-align: center;">Inter</h1>
+                                            <div formGroupName="{{i}}">
+                                
+                                          
+                                            <div class="form-group">
+                                              <label>College Name</label>
+                                              <input type="text" class="form-control" formControlName="iname">
+                                          </div>
+                                          <div class="form-group">
+                                            <label>Percentage</label>
+                                            <input type="text" class="form-control" formControlName="imarks">
+                                        </div>
+                                        <div class="form-group">
+                                                <label>Year</label>
+                                                <input type="text" class="form-control" formControlName="iyear">
+                                            </div>
+                                           
+                                           </div>
+                                           </div>
+                            
+                                           <div formArrayName="graduate" *ngFor="let add of reactive.get('graduate').controls;let i = index">
+                                                <h1 style="text-align: center;">Graduate</h1>
+                                                <div formGroupName="{{i}}">
+                                    
+                                              
+                                                <div class="form-group">
+                                                  <label>College Name</label>
+                                                  <input type="text" class="form-control" formControlName="gname">
+                                              </div>
+                                              <div class="form-group">
+                                                <label>Percentage</label>
+                                                <input type="text" class="form-control" formControlName="gmarks">
+                                            </div>
+                                            <div class="form-group">
+                                                    <label>Year</label>
+                                                    <input type="text" class="form-control" formControlName="gyear">
+                                                </div>
+                                               
+                                               </div>
+                                               </div>
+                                               <div formArrayName="pgraduate" *ngFor="let add of reactive.get('pgraduate').controls;let i = index">
+                                                    <h1 style="text-align: center;">Post Graduate </h1>
+                                                    <div formGroupName="{{i}}">
+                                        
+                                                  
+                                                    <div class="form-group">
+                                                      <label>College Name</label>
+                                                      <input type="text" class="form-control" formControlName="pname">
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label>Percentage</label>
+                                                    <input type="text" class="form-control" formControlName="pmarks">
+                                                </div>
+                                                <div class="form-group">
+                                                        <label>Year</label>
+                                                        <input type="text" class="form-control" formControlName="pyear">
+                                                    </div>
+                                                   
+                                                   </div>
+                                                   </div>
+                                    
+                            <button (click)="submit(reactive.value)" type="submit" class="btn btn-success">Submit</button>
+                        </form>
+                    </div>

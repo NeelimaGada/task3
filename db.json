@@ -1,0 +1,120 @@
+{
+  "personal": [
+    {
+      "firstname": "Gada",
+      "lastname": "Neelima",
+      "fathername": "Sharabaiah",
+      "id": 1
+    },
+    {
+      "firstname": "hjk",
+      "lastname": "jhkk",
+      "fathername": "kjhkjh",
+      "id": 2
+    }
+  ],
+  "education": [
+    {
+      "ssc": [
+        {
+          "sname": "Neo Royal High School",
+          "smarks": "dsd",
+          "syear": "sddsz"
+        }
+      ],
+      "inter": [
+        {
+          "iname": "sdsd",
+          "imarks": "sds",
+          "iyear": "sdsd"
+        }
+      ],
+      "graduate": [
+        {
+          "gname": "sd",
+          "gmarks": "sd",
+          "gyear": "sdsd"
+        }
+      ],
+      "pgraduate": [
+        {
+          "pname": "dsffg",
+          "pmarks": "fgfg",
+          "pyear": "fhgfhfg"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "ssc": [
+        {
+          "sname": "jhkh",
+          "smarks": "kjhk",
+          "syear": "jkhjk"
+        }
+      ],
+      "inter": [
+        {
+          "iname": "hjk",
+          "imarks": "hkjhk",
+          "iyear": "hk"
+        }
+      ],
+      "graduate": [
+        {
+          "gname": "jhk",
+          "gmarks": "kjhk",
+          "gyear": "jhk"
+        }
+      ],
+      "pgraduate": [
+        {
+          "pname": "jhk",
+          "pmarks": "kjh",
+          "pyear": "jhk"
+        }
+      ],
+      "id": 2
+    }
+  ],
+  "address": [
+    {
+      "PresentAddress": [
+        {
+          "state": "fgh",
+          "city": "ghf",
+          "village": "hjghj",
+          "pincode": "ghjhjh"
+        }
+      ],
+      "PremanentAddress": [
+        {
+          "state": "fgh",
+          "city": "ghf",
+          "village": "hjghj",
+          "pincode": "ghjhjh"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "PresentAddress": [
+        {
+          "state": "jhk",
+          "city": "jhkk",
+          "village": "kjh",
+          "pincode": "khjk"
+        }
+      ],
+      "PremanentAddress": [
+        {
+          "state": "jhk",
+          "city": "jhkk",
+          "village": "kjh",
+          "pincode": "khjk"
+        }
+      ],
+      "id": 2
+    }
+  ]
+}

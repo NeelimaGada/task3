@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h1>Personal Information</h1>
+                <form [formGroup]="reactive" (ngSubmit)="onSubmit(reactive.value)">
+                        <div class="form-group">
+                            <label>FirstName</label>
+                            <input type="text" class="form-control" formControlName="firstname">
+                        </div>
+                        <div class="form-group">
+                                <label>LastName</label>
+                                <input type="text" class="form-control"  formControlName="lastname">
+                            </div>
+                            <div class="form-group">
+                                    <label>Father's Name</label>
+                                    <input type="text" class="form-control"  formControlName="fathername" >
+                                </div>
+                        
+                                    <div class="form-group">
+                                            <button class="btn btn-primary">Submit</button>
+                                        </div>
+                    </form>
+        </div>
+        
+    </div>
+</div>
+    <div class="container mt-5">
+    <div class="row">
+            <div class="col-12">
+                    <app-education></app-education>
+                </div>
+    </div>
+</div>
+<div class="container mt-5">
+        <div class="row">
+                <div class="col-12">
+                        <app-address></app-address>
+                    </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" (click)="go()">Go To List</button>
